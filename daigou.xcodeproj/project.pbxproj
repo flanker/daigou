@@ -13,6 +13,14 @@
 		2B6088D21ADFA7F90002CD8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D11ADFA7F90002CD8C /* Images.xcassets */; };
 		2B6088D51ADFA7F90002CD8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D31ADFA7F90002CD8C /* LaunchScreen.xib */; };
 		2B6088E11ADFA7F90002CD8C /* daigouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088E01ADFA7F90002CD8C /* daigouTests.swift */; };
+		2B6088EB1ADFABF80002CD8C /* SalesOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088EA1ADFABF80002CD8C /* SalesOrder.swift */; };
+		2B6088EF1ADFACCF0002CD8C /* SalesOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088EE1ADFACCF0002CD8C /* SalesOrders.swift */; };
+		2B6088F11AE0620A0002CD8C /* MoneyDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088F01AE0620A0002CD8C /* MoneyDisplayView.swift */; };
+		2BBBB8EF1AE0F93100081500 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8EE1AE0F93100081500 /* HeaderView.swift */; };
+		2BBBB8F11AE11E8500081500 /* MoneyDisplayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F01AE11E8500081500 /* MoneyDisplayListView.swift */; };
+		2BBBB8F31AE121D400081500 /* MoneyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */; };
+		2BBBB8F61AE1493D00081500 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F51AE1493D00081500 /* Color.swift */; };
+		2BBBB8F81AE1DB7E00081500 /* FakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F71AE1DB7E00081500 /* FakeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,14 @@
 		2B6088DA1ADFA7F90002CD8C /* daigouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daigouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6088DF1ADFA7F90002CD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6088E01ADFA7F90002CD8C /* daigouTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daigouTests.swift; sourceTree = "<group>"; };
+		2B6088EA1ADFABF80002CD8C /* SalesOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalesOrder.swift; path = Models/SalesOrder.swift; sourceTree = "<group>"; };
+		2B6088EE1ADFACCF0002CD8C /* SalesOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesOrders.swift; sourceTree = "<group>"; };
+		2B6088F01AE0620A0002CD8C /* MoneyDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayView.swift; sourceTree = "<group>"; };
+		2BBBB8EE1AE0F93100081500 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		2BBBB8F01AE11E8500081500 /* MoneyDisplayListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayListView.swift; sourceTree = "<group>"; };
+		2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplay.swift; sourceTree = "<group>"; };
+		2BBBB8F51AE1493D00081500 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2BBBB8F71AE1DB7E00081500 /* FakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +94,14 @@
 			isa = PBXGroup;
 			children = (
 				2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */,
-				2B6088CC1ADFA7F90002CD8C /* ViewController.swift */,
+				2B6088ED1ADFAC7C0002CD8C /* Controllers */,
 				2B6088CE1ADFA7F90002CD8C /* Main.storyboard */,
 				2B6088D11ADFA7F90002CD8C /* Images.xcassets */,
 				2B6088D31ADFA7F90002CD8C /* LaunchScreen.xib */,
 				2B6088C81ADFA7F90002CD8C /* Supporting Files */,
+				2B6088EC1ADFAC6A0002CD8C /* Models */,
+				2B6088F21AE068170002CD8C /* CustomizedViews */,
+				2BBBB8F41AE121DA00081500 /* ViewModel */,
 			);
 			path = daigou;
 			sourceTree = "<group>";
@@ -110,6 +129,43 @@
 				2B6088DF1ADFA7F90002CD8C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B6088EC1ADFAC6A0002CD8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B6088EA1ADFABF80002CD8C /* SalesOrder.swift */,
+				2B6088EE1ADFACCF0002CD8C /* SalesOrders.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2B6088ED1ADFAC7C0002CD8C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B6088CC1ADFA7F90002CD8C /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2B6088F21AE068170002CD8C /* CustomizedViews */ = {
+			isa = PBXGroup;
+			children = (
+				2B6088F01AE0620A0002CD8C /* MoneyDisplayView.swift */,
+				2BBBB8EE1AE0F93100081500 /* HeaderView.swift */,
+				2BBBB8F01AE11E8500081500 /* MoneyDisplayListView.swift */,
+				2BBBB8F51AE1493D00081500 /* Color.swift */,
+				2BBBB8F71AE1DB7E00081500 /* FakeView.swift */,
+			);
+			name = CustomizedViews;
+			sourceTree = "<group>";
+		};
+		2BBBB8F41AE121DA00081500 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +268,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6088F11AE0620A0002CD8C /* MoneyDisplayView.swift in Sources */,
+				2BBBB8EF1AE0F93100081500 /* HeaderView.swift in Sources */,
+				2B6088EB1ADFABF80002CD8C /* SalesOrder.swift in Sources */,
+				2BBBB8F31AE121D400081500 /* MoneyDisplay.swift in Sources */,
 				2B6088CD1ADFA7F90002CD8C /* ViewController.swift in Sources */,
 				2B6088CB1ADFA7F90002CD8C /* AppDelegate.swift in Sources */,
+				2BBBB8F11AE11E8500081500 /* MoneyDisplayListView.swift in Sources */,
+				2BBBB8F81AE1DB7E00081500 /* FakeView.swift in Sources */,
+				2B6088EF1ADFACCF0002CD8C /* SalesOrders.swift in Sources */,
+				2BBBB8F61AE1493D00081500 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +473,7 @@
 				2B6088E61ADFA7F90002CD8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B6088E71ADFA7F90002CD8C /* Build configuration list for PBXNativeTarget "daigouTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +482,7 @@
 				2B6088E91ADFA7F90002CD8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
