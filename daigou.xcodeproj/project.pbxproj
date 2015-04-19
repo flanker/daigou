@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B6088CB1ADFA7F90002CD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */; };
 		2B6088CD1ADFA7F90002CD8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088CC1ADFA7F90002CD8C /* ViewController.swift */; };
-		2B6088D01ADFA7F90002CD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088CE1ADFA7F90002CD8C /* Main.storyboard */; };
 		2B6088D21ADFA7F90002CD8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D11ADFA7F90002CD8C /* Images.xcassets */; };
 		2B6088D51ADFA7F90002CD8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D31ADFA7F90002CD8C /* LaunchScreen.xib */; };
 		2B6088E11ADFA7F90002CD8C /* daigouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088E01ADFA7F90002CD8C /* daigouTests.swift */; };
@@ -38,7 +37,6 @@
 		2B6088C91ADFA7F90002CD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B6088CC1ADFA7F90002CD8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2B6088CF1ADFA7F90002CD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B6088D11ADFA7F90002CD8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B6088D41ADFA7F90002CD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2B6088DA1ADFA7F90002CD8C /* daigouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daigouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +93,6 @@
 			children = (
 				2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */,
 				2B6088ED1ADFAC7C0002CD8C /* Controllers */,
-				2B6088CE1ADFA7F90002CD8C /* Main.storyboard */,
 				2B6088D11ADFA7F90002CD8C /* Images.xcassets */,
 				2B6088D31ADFA7F90002CD8C /* LaunchScreen.xib */,
 				2B6088C81ADFA7F90002CD8C /* Supporting Files */,
@@ -248,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B6088D01ADFA7F90002CD8C /* Main.storyboard in Resources */,
 				2B6088D51ADFA7F90002CD8C /* LaunchScreen.xib in Resources */,
 				2B6088D21ADFA7F90002CD8C /* Images.xcassets in Resources */,
 			);
@@ -300,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2B6088CE1ADFA7F90002CD8C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B6088CF1ADFA7F90002CD8C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2B6088D31ADFA7F90002CD8C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

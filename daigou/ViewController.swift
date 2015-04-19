@@ -3,16 +3,17 @@ import UIKit
 class ViewController: UIViewController {
 
     var salesOrders:SalesOrders = SalesOrders()
+
+    var scrollView: UIScrollView = UIScrollView()
     var header: HeaderView?
     var moneyDisplayList: MoneyDisplayListView?
     var fakeView: FakeView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scrollView = self.view as! UIScrollView
-        scrollView.showsHorizontalScrollIndicator = false
-        scrollView.showsVerticalScrollIndicator = false
         initSalesOrders()
+
+        initScrollView()
         initHeader()
         initMoneyDisplayList(salesOrders)
         initFakeView()
@@ -33,26 +34,33 @@ class ViewController: UIViewController {
         salesOrders.add(SalesOrder(saleDate: NSDate(), cost: 803, amount: 1330))
     }
 
+    func initScrollView() {
+        self.scrollView.frame = self.view.frame
+        self.scrollView.showsVerticalScrollIndicator = false
+        self.scrollView.showsHorizontalScrollIndicator = false
+        self.view.addSubview(self.scrollView)
+    }
+
     func initHeader() {
         self.header = HeaderView()
-        self.view.addSubview(self.header!)
+        self.scrollView.addSubview(self.header!)
     }
 
     func initMoneyDisplayList(salesOrders: SalesOrders) {
         self.moneyDisplayList = MoneyDisplayListView(moneyDisplayList: MoneyDisplay.fromSalesOrders(salesOrders))
-        self.view.addSubview(self.moneyDisplayList!)
+        self.scrollView.addSubview(self.moneyDisplayList!)
     }
 
     func initFakeView() {
         self.fakeView = FakeView()
-        self.view.addSubview(self.fakeView!)
+        self.scrollView.addSubview(self.fakeView!)
     }
 
     override func viewWillLayoutSubviews() {
         self.header!.frame = CGRectMake(0, 0, self.view.frame.width, self.header!.frame.height)
         self.moneyDisplayList!.frame = CGRectMake(0, self.header!.frame.height, self.view.frame.width, self.moneyDisplayList!.frame.height)
         self.fakeView!.frame = CGRectMake(0, self.header!.frame.height + self.moneyDisplayList!.frame.height, self.view.frame.width, self.fakeView!.frame.height)
-        (self.view as! UIScrollView).contentSize.height = self.header!.frame.height +  self.moneyDisplayList!.frame.height + self.fakeView!.frame.height
+        self.scrollView.contentSize.height = self.header!.frame.height +  self.moneyDisplayList!.frame.height + self.fakeView!.frame.height
     }
 
 }
