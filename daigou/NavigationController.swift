@@ -17,19 +17,25 @@ class NavigationController : UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
-    }
-
-    func setup() {
-        self.setNavigationBarHidden(false, animated: true)
-        self.hidesBarsOnSwipe = true
         setupNavigationBar()
+        setupSolidStatusBar()
     }
 
     func setupNavigationBar() {
+        self.setNavigationBarHidden(false, animated: true)
+        self.hidesBarsOnSwipe = true
         self.navigationBar.barTintColor = Color.blue
         self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Color.white]
         self.navigationBar.translucent = false
+        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+    }
+
+    func setupSolidStatusBar() {
+        let statusFrame = CGRectMake(0, 0, self.view.bounds.size.width, UIApplication.sharedApplication().statusBarFrame.size.height)
+        var statusBar = UIView(frame: statusFrame)
+        statusBar.backgroundColor = Color.blue
+        self.view.addSubview(statusBar)
     }
 
 }
