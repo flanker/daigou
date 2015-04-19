@@ -20,6 +20,7 @@
 		2BBBB8F31AE121D400081500 /* MoneyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */; };
 		2BBBB8F61AE1493D00081500 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F51AE1493D00081500 /* Color.swift */; };
 		2BBBB8F81AE1DB7E00081500 /* FakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F71AE1DB7E00081500 /* FakeView.swift */; };
+		2BCD3AD91AE3711A0070923A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD3AD81AE3711A0070923A /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplay.swift; sourceTree = "<group>"; };
 		2BBBB8F51AE1493D00081500 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		2BBBB8F71AE1DB7E00081500 /* FakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeView.swift; sourceTree = "<group>"; };
+		2BCD3AD81AE3711A0070923A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				2B6088CC1ADFA7F90002CD8C /* ViewController.swift */,
+				2BCD3AD81AE3711A0070923A /* NavigationController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BCD3AD91AE3711A0070923A /* NavigationController.swift in Sources */,
 				2B6088F11AE0620A0002CD8C /* MoneyDisplayView.swift in Sources */,
 				2BBBB8EF1AE0F93100081500 /* HeaderView.swift in Sources */,
 				2B6088EB1ADFABF80002CD8C /* SalesOrder.swift in Sources */,

@@ -5,7 +5,6 @@ class ViewController: UIViewController {
     var salesOrders:SalesOrders = SalesOrders()
 
     var scrollView: UIScrollView = UIScrollView()
-    var header: HeaderView?
     var moneyDisplayList: MoneyDisplayListView?
     var fakeView: FakeView?
 
@@ -13,8 +12,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         initSalesOrders()
 
+        initSelf()
         initScrollView()
-        initHeader()
         initMoneyDisplayList(salesOrders)
         initFakeView()
     }
@@ -34,16 +33,26 @@ class ViewController: UIViewController {
         salesOrders.add(SalesOrder(saleDate: NSDate(), cost: 803, amount: 1330))
     }
 
+    func initSelf() {
+        self.title = "代购宝"
+
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.hidesBackButton = true
+
+        let backButton = UIButton()
+        backButton.frame = CGRectMake(0, 10, 20, 20)
+        backButton.setImage(UIImage(named: "menu")!, forState: UIControlState.Normal)
+
+        var leftBarButtonItem = UIBarButtonItem(customView: backButton)
+        self.navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: false)
+        self.navigationItem.leftBarButtonItem = leftBarButtonItem
+    }
+
     func initScrollView() {
         self.scrollView.frame = self.view.frame
         self.scrollView.showsVerticalScrollIndicator = false
         self.scrollView.showsHorizontalScrollIndicator = false
         self.view.addSubview(self.scrollView)
-    }
-
-    func initHeader() {
-        self.header = HeaderView()
-        self.scrollView.addSubview(self.header!)
     }
 
     func initMoneyDisplayList(salesOrders: SalesOrders) {
@@ -57,10 +66,9 @@ class ViewController: UIViewController {
     }
 
     override func viewWillLayoutSubviews() {
-        self.header!.frame = CGRectMake(0, 0, self.view.frame.width, self.header!.frame.height)
-        self.moneyDisplayList!.frame = CGRectMake(0, self.header!.frame.height, self.view.frame.width, self.moneyDisplayList!.frame.height)
-        self.fakeView!.frame = CGRectMake(0, self.header!.frame.height + self.moneyDisplayList!.frame.height, self.view.frame.width, self.fakeView!.frame.height)
-        self.scrollView.contentSize.height = self.header!.frame.height +  self.moneyDisplayList!.frame.height + self.fakeView!.frame.height
+        self.moneyDisplayList!.frame = CGRectMake(0, 0, self.view.frame.width, self.moneyDisplayList!.frame.height)
+        self.fakeView!.frame = CGRectMake(0, self.moneyDisplayList!.frame.height, self.view.frame.width, self.fakeView!.frame.height)
+        self.scrollView.contentSize.height = self.moneyDisplayList!.frame.height + self.fakeView!.frame.height
     }
 
 }
