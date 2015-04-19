@@ -37,18 +37,21 @@ class FakeView : UIView {
     func createDate() {
         self.dateView.image = UIImage(named: "date")
         self.dateView.frame.size.height = 100
+        self.dateView.contentMode = UIViewContentMode.Center
         self.addSubview(dateView)
     }
 
     func createChart() {
         self.chartView.image = UIImage(named: "chart")
-        self.chartView.frame.size.height = 150
+        self.chartView.frame.size.height = 190
+        self.chartView.contentMode = UIViewContentMode.Center
         self.addSubview(chartView)
     }
 
     func createDetails() {
         self.detailsView.image = UIImage(named: "details")
-        self.detailsView.frame.size.height = 120
+        self.detailsView.frame.size.height = 140
+        self.detailsView.contentMode = UIViewContentMode.Center
         self.addSubview(detailsView)
     }
 

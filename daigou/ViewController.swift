@@ -9,6 +9,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let scrollView = self.view as! UIScrollView
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
         initSalesOrders()
         initHeader()
         initMoneyDisplayList(salesOrders)
