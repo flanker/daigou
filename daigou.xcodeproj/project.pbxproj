@@ -15,12 +15,14 @@
 		2B6088EB1ADFABF80002CD8C /* SalesOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088EA1ADFABF80002CD8C /* SalesOrder.swift */; };
 		2B6088EF1ADFACCF0002CD8C /* SalesOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088EE1ADFACCF0002CD8C /* SalesOrders.swift */; };
 		2B6088F11AE0620A0002CD8C /* MoneyDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088F01AE0620A0002CD8C /* MoneyDisplayView.swift */; };
+		2BAEE7691AE5377700D7381F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEE7681AE5377700D7381F /* DetailViewController.swift */; };
 		2BBBB8EF1AE0F93100081500 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8EE1AE0F93100081500 /* HeaderView.swift */; };
 		2BBBB8F11AE11E8500081500 /* MoneyDisplayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F01AE11E8500081500 /* MoneyDisplayListView.swift */; };
 		2BBBB8F31AE121D400081500 /* MoneyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */; };
 		2BBBB8F61AE1493D00081500 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F51AE1493D00081500 /* Color.swift */; };
 		2BBBB8F81AE1DB7E00081500 /* FakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F71AE1DB7E00081500 /* FakeView.swift */; };
 		2BCD3AD91AE3711A0070923A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD3AD81AE3711A0070923A /* NavigationController.swift */; };
+		2BCD3ADB1AE3DE390070923A /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD3ADA1AE3DE390070923A /* HomeTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +48,14 @@
 		2B6088EA1ADFABF80002CD8C /* SalesOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalesOrder.swift; path = Models/SalesOrder.swift; sourceTree = "<group>"; };
 		2B6088EE1ADFACCF0002CD8C /* SalesOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesOrders.swift; sourceTree = "<group>"; };
 		2B6088F01AE0620A0002CD8C /* MoneyDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayView.swift; sourceTree = "<group>"; };
+		2BAEE7681AE5377700D7381F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2BBBB8EE1AE0F93100081500 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		2BBBB8F01AE11E8500081500 /* MoneyDisplayListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayListView.swift; sourceTree = "<group>"; };
 		2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplay.swift; sourceTree = "<group>"; };
 		2BBBB8F51AE1493D00081500 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		2BBBB8F71AE1DB7E00081500 /* FakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeView.swift; sourceTree = "<group>"; };
 		2BCD3AD81AE3711A0070923A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		2BCD3ADA1AE3DE390070923A /* HomeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 			children = (
 				2B6088CC1ADFA7F90002CD8C /* ViewController.swift */,
 				2BCD3AD81AE3711A0070923A /* NavigationController.swift */,
+				2BCD3ADA1AE3DE390070923A /* HomeTableController.swift */,
+				2BAEE7681AE5377700D7381F /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -267,11 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BAEE7691AE5377700D7381F /* DetailViewController.swift in Sources */,
 				2BCD3AD91AE3711A0070923A /* NavigationController.swift in Sources */,
 				2B6088F11AE0620A0002CD8C /* MoneyDisplayView.swift in Sources */,
 				2BBBB8EF1AE0F93100081500 /* HeaderView.swift in Sources */,
 				2B6088EB1ADFABF80002CD8C /* SalesOrder.swift in Sources */,
 				2BBBB8F31AE121D400081500 /* MoneyDisplay.swift in Sources */,
+				2BCD3ADB1AE3DE390070923A /* HomeTableController.swift in Sources */,
 				2B6088CD1ADFA7F90002CD8C /* ViewController.swift in Sources */,
 				2B6088CB1ADFA7F90002CD8C /* AppDelegate.swift in Sources */,
 				2BBBB8F11AE11E8500081500 /* MoneyDisplayListView.swift in Sources */,

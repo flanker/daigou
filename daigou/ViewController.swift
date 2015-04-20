@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         initScrollView()
         initMoneyDisplayList(salesOrders)
         initFakeView()
+
+        initHomeTable()
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,10 +67,18 @@ class ViewController: UIViewController {
         self.scrollView.addSubview(self.fakeView!)
     }
 
+    func initHomeTable() {
+        var homeTableController = HomeTableController(salesOrders: salesOrders)
+        self.addChildViewController(homeTableController)
+        self.scrollView.addSubview(self.childViewControllers.first!.view!!)
+        self.childViewControllers.first!.didMoveToParentViewController(self)
+    }
+
     override func viewWillLayoutSubviews() {
         self.moneyDisplayList!.frame = CGRectMake(0, 0, self.view.frame.width, self.moneyDisplayList!.frame.height)
         self.fakeView!.frame = CGRectMake(0, self.moneyDisplayList!.frame.height, self.view.frame.width, self.fakeView!.frame.height)
-        self.scrollView.contentSize.height = self.moneyDisplayList!.frame.height + self.fakeView!.frame.height
+        self.childViewControllers.first!.view!!.frame = CGRectMake(0, self.moneyDisplayList!.frame.height + self.fakeView!.frame.height, self.view.frame.width, self.childViewControllers.first!.view!!.frame.height)
+        self.scrollView.contentSize.height = self.moneyDisplayList!.frame.height + self.fakeView!.frame.height + self.childViewControllers.first!.view!!.frame.height
     }
 
 }

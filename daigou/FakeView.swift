@@ -6,7 +6,6 @@ class FakeView : UIView {
     var paddingView : UIView = UIView()
     var dateView : UIImageView = UIImageView()
     var chartView : UIImageView = UIImageView()
-    var detailsView : UIImageView = UIImageView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,14 +18,13 @@ class FakeView : UIView {
     init() {
         super.init(frame: CGRectZero)
         setup()
-        self.frame.size.height =  self.paddingView.frame.height + self.dateView.frame.height + self.chartView.frame.size.height + self.detailsView.frame.size.height
+        self.frame.size.height =  self.paddingView.frame.height + self.dateView.frame.height + self.chartView.frame.size.height
     }
 
     func setup() {
         createPadding()
         createDate()
         createChart()
-        createDetails()
     }
 
     func createPadding() {
@@ -48,17 +46,9 @@ class FakeView : UIView {
         self.addSubview(chartView)
     }
 
-    func createDetails() {
-        self.detailsView.image = UIImage(named: "details")
-        self.detailsView.frame.size.height = 140
-        self.detailsView.contentMode = UIViewContentMode.Center
-        self.addSubview(detailsView)
-    }
-
     override func layoutSubviews() {
         self.paddingView.frame = CGRectMake(0, 0, self.frame.width, self.paddingView.frame.size.height)
         self.dateView.frame = CGRectMake(0, self.paddingView.frame.size.height, self.frame.width, self.dateView.frame.size.height)
         self.chartView.frame = CGRectMake(0, self.paddingView.frame.size.height + dateView.frame.size.height, self.frame.width, self.chartView.frame.size.height)
-        self.detailsView.frame = CGRectMake(0, self.paddingView.frame.size.height + dateView.frame.size.height + self.chartView.frame.size.height, self.frame.width, self.detailsView.frame.size.height)
     }
 }

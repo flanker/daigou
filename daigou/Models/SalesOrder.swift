@@ -10,4 +10,11 @@ class SalesOrder {
         self.cost = cost
         self.amount = amount
     }
+
+    func description() -> String {
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        return String(format: formatter.stringFromDate(saleDate) + " - 收入：￥%.2f", amount)
+    }
+
 }

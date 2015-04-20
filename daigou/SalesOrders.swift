@@ -19,4 +19,17 @@ class SalesOrders {
         return salesOrders.reduce(0) { $0 + $1.amount }
     }
 
+    func count() -> Int {
+        return salesOrders.count
+    }
+
+    subscript(index: Int) -> SalesOrder {
+        get {
+            return salesOrders[index]
+        }
+        set(newValue) {
+            salesOrders[index] = newValue
+        }
+    }
+
 }
