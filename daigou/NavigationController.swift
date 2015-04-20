@@ -25,6 +25,7 @@ class NavigationController : UINavigationController {
         self.setNavigationBarHidden(false, animated: true)
         self.hidesBarsOnSwipe = true
         self.navigationBar.barTintColor = Color.blue
+        self.navigationBar.tintColor = Color.white
         self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Color.white]
         self.navigationBar.translucent = false
         self.navigationBar.shadowImage = UIImage()
