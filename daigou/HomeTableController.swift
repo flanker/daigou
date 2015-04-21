@@ -34,11 +34,7 @@ class HomeTableController : UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
-        cell.textLabel!.font = UIFont.systemFontOfSize(16)
-        cell.textLabel!.textColor = Color.darkBlue
-        cell.textLabel!.text = salesOrders![indexPath.row].description()
-        return cell
+        return HomeTableCell(salesOrder: salesOrders![indexPath.row])
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -46,5 +42,10 @@ class HomeTableController : UITableViewController {
         let vc = DetailViewController(salesOrder: salesOrders![indexPath.row])
         self.navigationController?.pushViewController(vc, animated: true)
     }
+
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 50.5
+    }
+
 
 }

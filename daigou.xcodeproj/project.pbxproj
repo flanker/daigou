@@ -23,6 +23,9 @@
 		2BBBB8F81AE1DB7E00081500 /* FakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F71AE1DB7E00081500 /* FakeView.swift */; };
 		2BCD3AD91AE3711A0070923A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD3AD81AE3711A0070923A /* NavigationController.swift */; };
 		2BCD3ADB1AE3DE390070923A /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD3ADA1AE3DE390070923A /* HomeTableController.swift */; };
+		2BD195321AE66171000731E0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD195311AE66171000731E0 /* Date.swift */; };
+		2BD195341AE66359000731E0 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD195331AE66359000731E0 /* Float.swift */; };
+		2BF16A4D1AE65C770083B17A /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF16A4C1AE65C770083B17A /* HomeTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		2BBBB8F71AE1DB7E00081500 /* FakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeView.swift; sourceTree = "<group>"; };
 		2BCD3AD81AE3711A0070923A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		2BCD3ADA1AE3DE390070923A /* HomeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
+		2BD195311AE66171000731E0 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		2BD195331AE66359000731E0 /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		2BF16A4C1AE65C770083B17A /* HomeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		2B6088C71ADFA7F90002CD8C /* daigou */ = {
 			isa = PBXGroup;
 			children = (
+				2BD195301AE6614E000731E0 /* Extensions */,
 				2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */,
 				2B6088ED1ADFAC7C0002CD8C /* Controllers */,
 				2B6088D11ADFA7F90002CD8C /* Images.xcassets */,
@@ -162,6 +169,7 @@
 				2BBBB8F01AE11E8500081500 /* MoneyDisplayListView.swift */,
 				2BBBB8F51AE1493D00081500 /* Color.swift */,
 				2BBBB8F71AE1DB7E00081500 /* FakeView.swift */,
+				2BF16A4C1AE65C770083B17A /* HomeTableCell.swift */,
 			);
 			name = CustomizedViews;
 			sourceTree = "<group>";
@@ -172,6 +180,15 @@
 				2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		2BD195301AE6614E000731E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2BD195311AE66171000731E0 /* Date.swift */,
+				2BD195331AE66359000731E0 /* Float.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BAEE7691AE5377700D7381F /* DetailViewController.swift in Sources */,
+				2BD195321AE66171000731E0 /* Date.swift in Sources */,
 				2BCD3AD91AE3711A0070923A /* NavigationController.swift in Sources */,
 				2B6088F11AE0620A0002CD8C /* MoneyDisplayView.swift in Sources */,
 				2BBBB8EF1AE0F93100081500 /* HeaderView.swift in Sources */,
@@ -282,7 +300,9 @@
 				2BCD3ADB1AE3DE390070923A /* HomeTableController.swift in Sources */,
 				2B6088CD1ADFA7F90002CD8C /* ViewController.swift in Sources */,
 				2B6088CB1ADFA7F90002CD8C /* AppDelegate.swift in Sources */,
+				2BF16A4D1AE65C770083B17A /* HomeTableCell.swift in Sources */,
 				2BBBB8F11AE11E8500081500 /* MoneyDisplayListView.swift in Sources */,
+				2BD195341AE66359000731E0 /* Float.swift in Sources */,
 				2BBBB8F81AE1DB7E00081500 /* FakeView.swift in Sources */,
 				2B6088EF1ADFACCF0002CD8C /* SalesOrders.swift in Sources */,
 				2BBBB8F61AE1493D00081500 /* Color.swift in Sources */,

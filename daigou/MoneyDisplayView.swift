@@ -25,8 +25,7 @@ class MoneyDisplayView : UIView {
     }
 
     convenience init(description: String, amount: Float) {
-        var moneyText = String(format: "￥%.2f", amount)
-        self.init(description: description, amountText: moneyText)
+        self.init(description: description, amountText: amount.toString())
     }
 
     convenience init(description: String, amountText: String) {
