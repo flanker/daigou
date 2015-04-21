@@ -25,6 +25,15 @@ class HomeTableController : UITableViewController {
         super.viewDidLoad()
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        let view = self.view as! UITableView
+        let index = view.indexPathForSelectedRow()
+        if (index != nil) {
+            view.deselectRowAtIndexPath(index!, animated: animated)
+        }
+    }
+
     override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
         return 1
     }
@@ -38,7 +47,6 @@ class HomeTableController : UITableViewController {
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let vc = DetailViewController(salesOrder: salesOrders![indexPath.row])
         self.navigationController?.pushViewController(vc, animated: true)
     }
