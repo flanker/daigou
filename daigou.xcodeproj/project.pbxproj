@@ -7,25 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B071D551AE7CBBE007D10AD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D411AE7CBBE007D10AD /* DetailViewController.swift */; };
+		2B071D561AE7CBBE007D10AD /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D421AE7CBBE007D10AD /* HomeTableController.swift */; };
+		2B071D571AE7CBBE007D10AD /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D431AE7CBBE007D10AD /* NavigationController.swift */; };
+		2B071D581AE7CBBE007D10AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D441AE7CBBE007D10AD /* ViewController.swift */; };
+		2B071D591AE7CBBE007D10AD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D461AE7CBBE007D10AD /* Color.swift */; };
+		2B071D601AE7CBBE007D10AD /* SalesOrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D4D1AE7CBBE007D10AD /* SalesOrderDetailView.swift */; };
+		2B071D611AE7CBBE007D10AD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D4F1AE7CBBE007D10AD /* Date.swift */; };
+		2B071D621AE7CBBE007D10AD /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D501AE7CBBE007D10AD /* Float.swift */; };
+		2B071D641AE7CBBE007D10AD /* SalesOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D531AE7CBBE007D10AD /* SalesOrder.swift */; };
+		2B071D651AE7CBBE007D10AD /* SalesOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D541AE7CBBE007D10AD /* SalesOrders.swift */; };
+		2B071D6E1AE7CD2D007D10AD /* FakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D671AE7CD2D007D10AD /* FakeView.swift */; };
+		2B071D6F1AE7CD2D007D10AD /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D681AE7CD2D007D10AD /* HeaderView.swift */; };
+		2B071D701AE7CD2D007D10AD /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D691AE7CD2D007D10AD /* HomeTableCell.swift */; };
+		2B071D711AE7CD2D007D10AD /* MoneyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D6A1AE7CD2D007D10AD /* MoneyDisplay.swift */; };
+		2B071D721AE7CD2D007D10AD /* MoneyDisplayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D6B1AE7CD2D007D10AD /* MoneyDisplayListView.swift */; };
+		2B071D731AE7CD2D007D10AD /* MoneyDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D6C1AE7CD2D007D10AD /* MoneyDisplayView.swift */; };
 		2B6088CB1ADFA7F90002CD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */; };
-		2B6088CD1ADFA7F90002CD8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088CC1ADFA7F90002CD8C /* ViewController.swift */; };
 		2B6088D21ADFA7F90002CD8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D11ADFA7F90002CD8C /* Images.xcassets */; };
 		2B6088D51ADFA7F90002CD8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D31ADFA7F90002CD8C /* LaunchScreen.xib */; };
 		2B6088E11ADFA7F90002CD8C /* daigouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088E01ADFA7F90002CD8C /* daigouTests.swift */; };
-		2B6088EB1ADFABF80002CD8C /* SalesOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088EA1ADFABF80002CD8C /* SalesOrder.swift */; };
-		2B6088EF1ADFACCF0002CD8C /* SalesOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088EE1ADFACCF0002CD8C /* SalesOrders.swift */; };
-		2B6088F11AE0620A0002CD8C /* MoneyDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088F01AE0620A0002CD8C /* MoneyDisplayView.swift */; };
-		2BAEE7691AE5377700D7381F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEE7681AE5377700D7381F /* DetailViewController.swift */; };
-		2BBBB8EF1AE0F93100081500 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8EE1AE0F93100081500 /* HeaderView.swift */; };
-		2BBBB8F11AE11E8500081500 /* MoneyDisplayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F01AE11E8500081500 /* MoneyDisplayListView.swift */; };
-		2BBBB8F31AE121D400081500 /* MoneyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */; };
-		2BBBB8F61AE1493D00081500 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F51AE1493D00081500 /* Color.swift */; };
-		2BBBB8F81AE1DB7E00081500 /* FakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBB8F71AE1DB7E00081500 /* FakeView.swift */; };
-		2BCD3AD91AE3711A0070923A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD3AD81AE3711A0070923A /* NavigationController.swift */; };
-		2BCD3ADB1AE3DE390070923A /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD3ADA1AE3DE390070923A /* HomeTableController.swift */; };
-		2BD195321AE66171000731E0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD195311AE66171000731E0 /* Date.swift */; };
-		2BD195341AE66359000731E0 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD195331AE66359000731E0 /* Float.swift */; };
-		2BF16A4D1AE65C770083B17A /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF16A4C1AE65C770083B17A /* HomeTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,29 +40,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B071D411AE7CBBE007D10AD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2B071D421AE7CBBE007D10AD /* HomeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
+		2B071D431AE7CBBE007D10AD /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		2B071D441AE7CBBE007D10AD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B071D461AE7CBBE007D10AD /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2B071D4D1AE7CBBE007D10AD /* SalesOrderDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesOrderDetailView.swift; sourceTree = "<group>"; };
+		2B071D4F1AE7CBBE007D10AD /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		2B071D501AE7CBBE007D10AD /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		2B071D531AE7CBBE007D10AD /* SalesOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesOrder.swift; sourceTree = "<group>"; };
+		2B071D541AE7CBBE007D10AD /* SalesOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesOrders.swift; sourceTree = "<group>"; };
+		2B071D671AE7CD2D007D10AD /* FakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeView.swift; sourceTree = "<group>"; };
+		2B071D681AE7CD2D007D10AD /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		2B071D691AE7CD2D007D10AD /* HomeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
+		2B071D6A1AE7CD2D007D10AD /* MoneyDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplay.swift; sourceTree = "<group>"; };
+		2B071D6B1AE7CD2D007D10AD /* MoneyDisplayListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayListView.swift; sourceTree = "<group>"; };
+		2B071D6C1AE7CD2D007D10AD /* MoneyDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayView.swift; sourceTree = "<group>"; };
 		2B6088C51ADFA7F90002CD8C /* daigou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daigou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6088C91ADFA7F90002CD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B6088CC1ADFA7F90002CD8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B6088D11ADFA7F90002CD8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B6088D41ADFA7F90002CD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2B6088DA1ADFA7F90002CD8C /* daigouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daigouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6088DF1ADFA7F90002CD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6088E01ADFA7F90002CD8C /* daigouTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daigouTests.swift; sourceTree = "<group>"; };
-		2B6088EA1ADFABF80002CD8C /* SalesOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalesOrder.swift; path = Models/SalesOrder.swift; sourceTree = "<group>"; };
-		2B6088EE1ADFACCF0002CD8C /* SalesOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesOrders.swift; sourceTree = "<group>"; };
-		2B6088F01AE0620A0002CD8C /* MoneyDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayView.swift; sourceTree = "<group>"; };
-		2BAEE7681AE5377700D7381F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		2BBBB8EE1AE0F93100081500 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		2BBBB8F01AE11E8500081500 /* MoneyDisplayListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayListView.swift; sourceTree = "<group>"; };
-		2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplay.swift; sourceTree = "<group>"; };
-		2BBBB8F51AE1493D00081500 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		2BBBB8F71AE1DB7E00081500 /* FakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeView.swift; sourceTree = "<group>"; };
-		2BCD3AD81AE3711A0070923A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		2BCD3ADA1AE3DE390070923A /* HomeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
-		2BD195311AE66171000731E0 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		2BD195331AE66359000731E0 /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
-		2BF16A4C1AE65C770083B17A /* HomeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B071D401AE7CBBE007D10AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B071D411AE7CBBE007D10AD /* DetailViewController.swift */,
+				2B071D421AE7CBBE007D10AD /* HomeTableController.swift */,
+				2B071D431AE7CBBE007D10AD /* NavigationController.swift */,
+				2B071D441AE7CBBE007D10AD /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2B071D451AE7CBBE007D10AD /* CustomizedViews */ = {
+			isa = PBXGroup;
+			children = (
+				2B071D661AE7CD2D007D10AD /* Home */,
+				2B071D6D1AE7CD2D007D10AD /* Shared */,
+				2B071D461AE7CBBE007D10AD /* Color.swift */,
+				2B071D4D1AE7CBBE007D10AD /* SalesOrderDetailView.swift */,
+			);
+			path = CustomizedViews;
+			sourceTree = "<group>";
+		};
+		2B071D4E1AE7CBBE007D10AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B071D4F1AE7CBBE007D10AD /* Date.swift */,
+				2B071D501AE7CBBE007D10AD /* Float.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B071D521AE7CBBE007D10AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B071D531AE7CBBE007D10AD /* SalesOrder.swift */,
+				2B071D541AE7CBBE007D10AD /* SalesOrders.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B071D661AE7CD2D007D10AD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2B071D671AE7CD2D007D10AD /* FakeView.swift */,
+				2B071D681AE7CD2D007D10AD /* HeaderView.swift */,
+				2B071D691AE7CD2D007D10AD /* HomeTableCell.swift */,
+				2B071D6A1AE7CD2D007D10AD /* MoneyDisplay.swift */,
+				2B071D6B1AE7CD2D007D10AD /* MoneyDisplayListView.swift */,
+				2B071D6C1AE7CD2D007D10AD /* MoneyDisplayView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2B071D6D1AE7CD2D007D10AD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		2B6088BC1ADFA7F90002CD8C = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +165,14 @@
 		2B6088C71ADFA7F90002CD8C /* daigou */ = {
 			isa = PBXGroup;
 			children = (
-				2BD195301AE6614E000731E0 /* Extensions */,
+				2B071D401AE7CBBE007D10AD /* Controllers */,
+				2B071D451AE7CBBE007D10AD /* CustomizedViews */,
+				2B071D4E1AE7CBBE007D10AD /* Extensions */,
+				2B071D521AE7CBBE007D10AD /* Models */,
 				2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */,
-				2B6088ED1ADFAC7C0002CD8C /* Controllers */,
 				2B6088D11ADFA7F90002CD8C /* Images.xcassets */,
 				2B6088D31ADFA7F90002CD8C /* LaunchScreen.xib */,
 				2B6088C81ADFA7F90002CD8C /* Supporting Files */,
-				2B6088EC1ADFAC6A0002CD8C /* Models */,
-				2B6088F21AE068170002CD8C /* CustomizedViews */,
-				2BBBB8F41AE121DA00081500 /* ViewModel */,
 			);
 			path = daigou;
 			sourceTree = "<group>";
@@ -139,56 +200,6 @@
 				2B6088DF1ADFA7F90002CD8C /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2B6088EC1ADFAC6A0002CD8C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2B6088EA1ADFABF80002CD8C /* SalesOrder.swift */,
-				2B6088EE1ADFACCF0002CD8C /* SalesOrders.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		2B6088ED1ADFAC7C0002CD8C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				2B6088CC1ADFA7F90002CD8C /* ViewController.swift */,
-				2BCD3AD81AE3711A0070923A /* NavigationController.swift */,
-				2BCD3ADA1AE3DE390070923A /* HomeTableController.swift */,
-				2BAEE7681AE5377700D7381F /* DetailViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		2B6088F21AE068170002CD8C /* CustomizedViews */ = {
-			isa = PBXGroup;
-			children = (
-				2B6088F01AE0620A0002CD8C /* MoneyDisplayView.swift */,
-				2BBBB8EE1AE0F93100081500 /* HeaderView.swift */,
-				2BBBB8F01AE11E8500081500 /* MoneyDisplayListView.swift */,
-				2BBBB8F51AE1493D00081500 /* Color.swift */,
-				2BBBB8F71AE1DB7E00081500 /* FakeView.swift */,
-				2BF16A4C1AE65C770083B17A /* HomeTableCell.swift */,
-			);
-			name = CustomizedViews;
-			sourceTree = "<group>";
-		};
-		2BBBB8F41AE121DA00081500 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				2BBBB8F21AE121D400081500 /* MoneyDisplay.swift */,
-			);
-			name = ViewModel;
-			sourceTree = "<group>";
-		};
-		2BD195301AE6614E000731E0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				2BD195311AE66171000731E0 /* Date.swift */,
-				2BD195331AE66359000731E0 /* Float.swift */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,22 +301,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BAEE7691AE5377700D7381F /* DetailViewController.swift in Sources */,
-				2BD195321AE66171000731E0 /* Date.swift in Sources */,
-				2BCD3AD91AE3711A0070923A /* NavigationController.swift in Sources */,
-				2B6088F11AE0620A0002CD8C /* MoneyDisplayView.swift in Sources */,
-				2BBBB8EF1AE0F93100081500 /* HeaderView.swift in Sources */,
-				2B6088EB1ADFABF80002CD8C /* SalesOrder.swift in Sources */,
-				2BBBB8F31AE121D400081500 /* MoneyDisplay.swift in Sources */,
-				2BCD3ADB1AE3DE390070923A /* HomeTableController.swift in Sources */,
-				2B6088CD1ADFA7F90002CD8C /* ViewController.swift in Sources */,
+				2B071D711AE7CD2D007D10AD /* MoneyDisplay.swift in Sources */,
+				2B071D581AE7CBBE007D10AD /* ViewController.swift in Sources */,
 				2B6088CB1ADFA7F90002CD8C /* AppDelegate.swift in Sources */,
-				2BF16A4D1AE65C770083B17A /* HomeTableCell.swift in Sources */,
-				2BBBB8F11AE11E8500081500 /* MoneyDisplayListView.swift in Sources */,
-				2BD195341AE66359000731E0 /* Float.swift in Sources */,
-				2BBBB8F81AE1DB7E00081500 /* FakeView.swift in Sources */,
-				2B6088EF1ADFACCF0002CD8C /* SalesOrders.swift in Sources */,
-				2BBBB8F61AE1493D00081500 /* Color.swift in Sources */,
+				2B071D571AE7CBBE007D10AD /* NavigationController.swift in Sources */,
+				2B071D6E1AE7CD2D007D10AD /* FakeView.swift in Sources */,
+				2B071D731AE7CD2D007D10AD /* MoneyDisplayView.swift in Sources */,
+				2B071D551AE7CBBE007D10AD /* DetailViewController.swift in Sources */,
+				2B071D601AE7CBBE007D10AD /* SalesOrderDetailView.swift in Sources */,
+				2B071D611AE7CBBE007D10AD /* Date.swift in Sources */,
+				2B071D561AE7CBBE007D10AD /* HomeTableController.swift in Sources */,
+				2B071D621AE7CBBE007D10AD /* Float.swift in Sources */,
+				2B071D721AE7CD2D007D10AD /* MoneyDisplayListView.swift in Sources */,
+				2B071D701AE7CD2D007D10AD /* HomeTableCell.swift in Sources */,
+				2B071D651AE7CBBE007D10AD /* SalesOrders.swift in Sources */,
+				2B071D591AE7CBBE007D10AD /* Color.swift in Sources */,
+				2B071D641AE7CBBE007D10AD /* SalesOrder.swift in Sources */,
+				2B071D6F1AE7CD2D007D10AD /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
