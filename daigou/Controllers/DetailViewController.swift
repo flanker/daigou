@@ -4,7 +4,7 @@ import Foundation
 class DetailViewController: UIViewController {
 
     var salesOrder: SalesOrder?
-    var salesOrderView: SalesOrderDetailsView?
+    var salesOrderView: DetailView?
 
     convenience init(salesOrder: SalesOrder) {
         self.init()
@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
     func initSelf() {
         self.title = "代购宝详细"
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        salesOrderView = SalesOrderDetailsView(salesOrder: salesOrder!)
+        salesOrderView = DetailView(salesOrder: salesOrder!)
         self.view.addSubview(salesOrderView!)
     }
 
