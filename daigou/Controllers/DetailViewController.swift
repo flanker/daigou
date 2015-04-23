@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
 
     func initSelf() {
         self.title = "代购宝详细"
+        self.navigationController?.hidesBarsOnSwipe = false
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         salesOrderView = DetailView(salesOrder: salesOrder!)
         self.view.addSubview(salesOrderView!)

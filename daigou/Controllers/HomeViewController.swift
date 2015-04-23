@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     var salesOrders:SalesOrders = SalesOrders()
 
@@ -72,6 +72,10 @@ class ViewController: UIViewController {
         self.addChildViewController(homeTableController)
         self.scrollView.addSubview(self.childViewControllers.first!.view!!)
         self.childViewControllers.first!.didMoveToParentViewController(self)
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.hidesBarsOnSwipe = true
     }
 
     override func viewWillLayoutSubviews() {

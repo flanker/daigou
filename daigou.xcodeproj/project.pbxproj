@@ -10,7 +10,6 @@
 		2B071D551AE7CBBE007D10AD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D411AE7CBBE007D10AD /* DetailViewController.swift */; };
 		2B071D561AE7CBBE007D10AD /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D421AE7CBBE007D10AD /* HomeTableController.swift */; };
 		2B071D571AE7CBBE007D10AD /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D431AE7CBBE007D10AD /* NavigationController.swift */; };
-		2B071D581AE7CBBE007D10AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D441AE7CBBE007D10AD /* ViewController.swift */; };
 		2B071D591AE7CBBE007D10AD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D461AE7CBBE007D10AD /* Color.swift */; };
 		2B071D611AE7CBBE007D10AD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D4F1AE7CBBE007D10AD /* Date.swift */; };
 		2B071D621AE7CBBE007D10AD /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D501AE7CBBE007D10AD /* Float.swift */; };
@@ -30,6 +29,7 @@
 		2BF7E0311AE90F40003779F8 /* DetailBodyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF7E0301AE90F40003779F8 /* DetailBodyContent.swift */; };
 		2BF7E0341AE90F5E003779F8 /* DetailBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF7E0321AE90F5E003779F8 /* DetailBodyView.swift */; };
 		2BF7E0351AE90F5E003779F8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF7E0331AE90F5E003779F8 /* DetailView.swift */; };
+		2BF7E0371AE920D8003779F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF7E0361AE920D8003779F8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		2B071D411AE7CBBE007D10AD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2B071D421AE7CBBE007D10AD /* HomeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
 		2B071D431AE7CBBE007D10AD /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		2B071D441AE7CBBE007D10AD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B071D461AE7CBBE007D10AD /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		2B071D4F1AE7CBBE007D10AD /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		2B071D501AE7CBBE007D10AD /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		2BF7E0301AE90F40003779F8 /* DetailBodyContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailBodyContent.swift; path = SalesOrderDetail/DetailBodyContent.swift; sourceTree = "<group>"; };
 		2BF7E0321AE90F5E003779F8 /* DetailBodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailBodyView.swift; path = SalesOrderDetail/DetailBodyView.swift; sourceTree = "<group>"; };
 		2BF7E0331AE90F5E003779F8 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = SalesOrderDetail/DetailView.swift; sourceTree = "<group>"; };
+		2BF7E0361AE920D8003779F8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 				2B071D411AE7CBBE007D10AD /* DetailViewController.swift */,
 				2B071D421AE7CBBE007D10AD /* HomeTableController.swift */,
 				2B071D431AE7CBBE007D10AD /* NavigationController.swift */,
-				2B071D441AE7CBBE007D10AD /* ViewController.swift */,
+				2BF7E0361AE920D8003779F8 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -319,10 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B071D711AE7CD2D007D10AD /* MoneyDisplay.swift in Sources */,
-				2B071D581AE7CBBE007D10AD /* ViewController.swift in Sources */,
 				2BF7E0311AE90F40003779F8 /* DetailBodyContent.swift in Sources */,
 				2B6088CB1ADFA7F90002CD8C /* AppDelegate.swift in Sources */,
 				2B071D571AE7CBBE007D10AD /* NavigationController.swift in Sources */,
+				2BF7E0371AE920D8003779F8 /* HomeViewController.swift in Sources */,
 				2BF7E0351AE90F5E003779F8 /* DetailView.swift in Sources */,
 				2B071D6E1AE7CD2D007D10AD /* FakeView.swift in Sources */,
 				2B071D731AE7CD2D007D10AD /* MoneyDisplayView.swift in Sources */,
