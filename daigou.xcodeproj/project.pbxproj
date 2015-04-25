@@ -25,6 +25,7 @@
 		2B6088D21ADFA7F90002CD8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D11ADFA7F90002CD8C /* Images.xcassets */; };
 		2B6088D51ADFA7F90002CD8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D31ADFA7F90002CD8C /* LaunchScreen.xib */; };
 		2B6088E11ADFA7F90002CD8C /* daigouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088E01ADFA7F90002CD8C /* daigouTests.swift */; };
+		2BDD02E11AEC58E600A7D76D /* ScrollBoxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD02E01AEC58E600A7D76D /* ScrollBoxesView.swift */; };
 		2BF7E0271AE90964003779F8 /* BoxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF7E0261AE90964003779F8 /* BoxesView.swift */; };
 		2BF7E0311AE90F40003779F8 /* DetailBodyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF7E0301AE90F40003779F8 /* DetailBodyContent.swift */; };
 		2BF7E0341AE90F5E003779F8 /* DetailBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF7E0321AE90F5E003779F8 /* DetailBodyView.swift */; };
@@ -65,6 +66,7 @@
 		2B6088DA1ADFA7F90002CD8C /* daigouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daigouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6088DF1ADFA7F90002CD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6088E01ADFA7F90002CD8C /* daigouTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daigouTests.swift; sourceTree = "<group>"; };
+		2BDD02E01AEC58E600A7D76D /* ScrollBoxesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollBoxesView.swift; sourceTree = "<group>"; };
 		2BF7E0261AE90964003779F8 /* BoxesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxesView.swift; sourceTree = "<group>"; };
 		2BF7E0301AE90F40003779F8 /* DetailBodyContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailBodyContent.swift; path = SalesOrderDetail/DetailBodyContent.swift; sourceTree = "<group>"; };
 		2BF7E0321AE90F5E003779F8 /* DetailBodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailBodyView.swift; path = SalesOrderDetail/DetailBodyView.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				2BF7E0261AE90964003779F8 /* BoxesView.swift */,
+				2BDD02E01AEC58E600A7D76D /* ScrollBoxesView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				2B6088CB1ADFA7F90002CD8C /* AppDelegate.swift in Sources */,
 				2B071D571AE7CBBE007D10AD /* NavigationController.swift in Sources */,
 				2BF7E0371AE920D8003779F8 /* HomeViewController.swift in Sources */,
+				2BDD02E11AEC58E600A7D76D /* ScrollBoxesView.swift in Sources */,
 				2BF7E0351AE90F5E003779F8 /* DetailView.swift in Sources */,
 				2B071D6E1AE7CD2D007D10AD /* FakeView.swift in Sources */,
 				2B071D731AE7CD2D007D10AD /* MoneyDisplayView.swift in Sources */,

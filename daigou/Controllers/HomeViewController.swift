@@ -2,11 +2,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var salesOrders:SalesOrders = SalesOrders()
-
-    var scrollView: UIScrollView = UIScrollView()
-    var moneyDisplayList: MoneyDisplayListView?
-    var fakeView: FakeView?
+    var salesOrders: SalesOrders = SalesOrders()
+    var scrollView: ScrollBoxesView = ScrollBoxesView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +13,6 @@ class HomeViewController: UIViewController {
         initScrollView()
         initMoneyDisplayList(salesOrders)
         initFakeView()
-
         initHomeTable()
     }
 
@@ -58,17 +54,17 @@ class HomeViewController: UIViewController {
     }
 
     func initMoneyDisplayList(salesOrders: SalesOrders) {
-        self.moneyDisplayList = MoneyDisplayListView(moneyDisplayList: MoneyDisplay.fromSalesOrders(salesOrders))
-        self.scrollView.addSubview(self.moneyDisplayList!)
+        let moneyDisplayList = MoneyDisplayListView(moneyDisplayList: MoneyDisplay.fromSalesOrders(salesOrders))
+        self.scrollView.addSubview(moneyDisplayList)
     }
 
     func initFakeView() {
-        self.fakeView = FakeView()
-        self.scrollView.addSubview(self.fakeView!)
+        let fakeView = FakeView()
+        self.scrollView.addSubview(fakeView)
     }
 
     func initHomeTable() {
-        var homeTableController = HomeTableController(salesOrders: salesOrders)
+        let homeTableController = HomeTableController(salesOrders: salesOrders)
         self.addChildViewController(homeTableController)
         self.scrollView.addSubview(self.childViewControllers.first!.view!!)
         self.childViewControllers.first!.didMoveToParentViewController(self)
@@ -76,13 +72,6 @@ class HomeViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.hidesBarsOnSwipe = true
-    }
-
-    override func viewWillLayoutSubviews() {
-        self.moneyDisplayList!.frame = CGRectMake(0, 0, self.view.frame.width, self.moneyDisplayList!.frame.height)
-        self.fakeView!.frame = CGRectMake(0, self.moneyDisplayList!.frame.height, self.view.frame.width, self.fakeView!.frame.height)
-        self.childViewControllers.first!.view!!.frame = CGRectMake(0, self.moneyDisplayList!.frame.height + self.fakeView!.frame.height, self.view.frame.width, self.childViewControllers.first!.view!!.frame.height)
-        self.scrollView.contentSize.height = self.moneyDisplayList!.frame.height + self.fakeView!.frame.height + self.childViewControllers.first!.view!!.frame.height
     }
 
 }

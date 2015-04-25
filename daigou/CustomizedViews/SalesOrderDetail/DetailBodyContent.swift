@@ -67,7 +67,7 @@ class DetailBodyContentView : BoxesView {
         let label = BodyContentLable()
         label.font = UIFont(name: label.font.fontName, size: fontSize)
         label.textAlignment = NSTextAlignment.Left
-        label.textColor = Color.darkBlue
+        label.textColor = Color.blue
         label.text = text
         label.frame.size.height = fontSize + CGFloat(10)
         self.addSubview(label)
@@ -82,4 +82,5 @@ class DetailBodyContentView : BoxesView {
         view.frame.size.height = height
         self.addSubview(view)
     }
+
 }
