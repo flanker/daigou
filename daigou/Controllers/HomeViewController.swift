@@ -37,13 +37,8 @@ class HomeViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = nil
         self.navigationItem.hidesBackButton = true
 
-        let backButton = UIButton()
-        backButton.frame = CGRectMake(0, 10, 20, 20)
-        backButton.setImage(UIImage(named: "menu")!, forState: UIControlState.Normal)
-
-        var leftBarButtonItem = UIBarButtonItem(customView: backButton)
-        self.navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: false)
-        self.navigationItem.leftBarButtonItem = leftBarButtonItem
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(name: "menu")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(name: "add", target: self, action: "addNewSalesOrder")
     }
 
     func initScrollView() {
@@ -72,6 +67,11 @@ class HomeViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.hidesBarsOnSwipe = true
+    }
+
+    func addNewSalesOrder() {
+        let view = AddSalesOrderViewController()
+        self.navigationController?.pushViewController(view, animated: true)
     }
 
 }

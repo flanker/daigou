@@ -21,6 +21,8 @@
 		2B071D711AE7CD2D007D10AD /* MoneyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D6A1AE7CD2D007D10AD /* MoneyDisplay.swift */; };
 		2B071D721AE7CD2D007D10AD /* MoneyDisplayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D6B1AE7CD2D007D10AD /* MoneyDisplayListView.swift */; };
 		2B071D731AE7CD2D007D10AD /* MoneyDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B071D6C1AE7CD2D007D10AD /* MoneyDisplayView.swift */; };
+		2B31F2881AF791D200F852D8 /* AddSalesOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31F2871AF791D200F852D8 /* AddSalesOrderViewController.swift */; };
+		2B31F28C1AF7947500F852D8 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31F28B1AF7947500F852D8 /* UIBarButtonItem.swift */; };
 		2B6088CB1ADFA7F90002CD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */; };
 		2B6088D21ADFA7F90002CD8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D11ADFA7F90002CD8C /* Images.xcassets */; };
 		2B6088D51ADFA7F90002CD8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6088D31ADFA7F90002CD8C /* LaunchScreen.xib */; };
@@ -58,6 +60,8 @@
 		2B071D6A1AE7CD2D007D10AD /* MoneyDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplay.swift; sourceTree = "<group>"; };
 		2B071D6B1AE7CD2D007D10AD /* MoneyDisplayListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayListView.swift; sourceTree = "<group>"; };
 		2B071D6C1AE7CD2D007D10AD /* MoneyDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDisplayView.swift; sourceTree = "<group>"; };
+		2B31F2871AF791D200F852D8 /* AddSalesOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSalesOrderViewController.swift; sourceTree = "<group>"; };
+		2B31F28B1AF7947500F852D8 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 		2B6088C51ADFA7F90002CD8C /* daigou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daigou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6088C91ADFA7F90002CD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6088CA1ADFA7F90002CD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				2B071D421AE7CBBE007D10AD /* HomeTableController.swift */,
 				2B071D431AE7CBBE007D10AD /* NavigationController.swift */,
 				2BF7E0361AE920D8003779F8 /* HomeViewController.swift */,
+				2B31F2871AF791D200F852D8 /* AddSalesOrderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			children = (
 				2B071D4F1AE7CBBE007D10AD /* Date.swift */,
 				2B071D501AE7CBBE007D10AD /* Float.swift */,
+				2B31F28B1AF7947500F852D8 /* UIBarButtonItem.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 				2B071D6E1AE7CD2D007D10AD /* FakeView.swift in Sources */,
 				2B071D731AE7CD2D007D10AD /* MoneyDisplayView.swift in Sources */,
 				2B071D551AE7CBBE007D10AD /* DetailViewController.swift in Sources */,
+				2B31F2881AF791D200F852D8 /* AddSalesOrderViewController.swift in Sources */,
 				2B071D611AE7CBBE007D10AD /* Date.swift in Sources */,
 				2B071D561AE7CBBE007D10AD /* HomeTableController.swift in Sources */,
 				2BF7E0341AE90F5E003779F8 /* DetailBodyView.swift in Sources */,
@@ -341,6 +348,7 @@
 				2BF7E0271AE90964003779F8 /* BoxesView.swift in Sources */,
 				2B071D591AE7CBBE007D10AD /* Color.swift in Sources */,
 				2B071D641AE7CBBE007D10AD /* SalesOrder.swift in Sources */,
+				2B31F28C1AF7947500F852D8 /* UIBarButtonItem.swift in Sources */,
 				2B071D6F1AE7CD2D007D10AD /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
